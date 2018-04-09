@@ -20,7 +20,7 @@ return flattened;
 }  
 
 
-function creatematches(playerslist){
+function createMatches(playerslist){
   var players=flatten(shuffleArray(playerslist));
   if (players.length % 2){
     players.push(null)
@@ -32,8 +32,7 @@ var schedule = [];
     var pairings = [];
     for (var y=0;y<half;y++){
       if (players[y+half] && players[y]){
-        if (players[y] == null || players[nPlayers-y-1] == null){
-          1+1;
+        if (players[y] == null || players[nPlayers-y-1] == null){ //if null do nothing
         } else if (x % 3 && y == 0){        
           pairings.push([players[nPlayers-y-1],'vs',players[y]]);
         } else {
