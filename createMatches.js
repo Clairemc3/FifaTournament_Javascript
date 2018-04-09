@@ -12,7 +12,7 @@ function shuffleArray(array) {
   return array;
 }
 
-function flatten(list){
+function flatten(array){
 var flattened = list.reduce(function(a, b) {
   return a.concat(b);
 });
