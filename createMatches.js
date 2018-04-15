@@ -34,7 +34,7 @@ var schedule = [];
       if (players[y+half] && players[y]){
         if (players[y] == null || players[nPlayers-y-1] == null){ //if null do nothing
         } else if (x % 3 && y == 0){        
-          pairings.push([players[nPlayers-y-1],'vs',players[y]]);
+          pairings.push([players[nPlayers-y-1],'vs',players[y]]);// swap home & away pairs every (number of players/3) to prevent players always being home or away
         } else {
           pairings.push([players[y],'vs',players[nPlayers-y-1]]);
         }
